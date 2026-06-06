@@ -46,8 +46,6 @@ PRIVATE INFRASTRUCTURE COMPANY
 Наші послуги
 </a>
 
-
-
 <section id="about">
 
 <div class="container">
@@ -80,7 +78,8 @@ URAVTODOR виконує функції, подібні до реального 
 <div class="card">
 <h3>Будівництво доріг</h3>
 <p>Будівництво нових транспортних маршрутів.</p>
-<p>від 40000€</p></div>
+<p>від 40000€</p>
+</div>
 
 <div class="card">
 <h3>Ремонт доріг</h3>
@@ -96,7 +95,7 @@ URAVTODOR виконує функції, подібні до реального 
 <div class="card">
 <h3>Реконструкція мостів</h3>
 <p>Ремонт та модернізація мостових споруд.</p>
-  <p>ціна від 20000€</p>
+<p>ціна від 20000€</p>
 </div>
 
 </div>
@@ -105,8 +104,27 @@ URAVTODOR виконує функції, подібні до реального 
 
 </section>
 
+<!-- DONATE SECTION -->
+<section id="donate">
+<div class="container">
 
+<h2>Підтримати компанію</h2>
 
+<p class="section-text">
+Ви можете підтримати розвиток URAVTODOR через криптовалюту або Telegram Stars.
+</p>
+
+<div class="cc-payment-form"></div>
+
+<div style="margin-top:20px;">
+<a href="https://t.me/uravtodor_bot" target="_blank">
+<button class="btn">
+⭐ Задонатити через Telegram Stars
+</button>
+</a>
+</div>
+
+</div>
 </section>
 
 <section id="contacts">
@@ -125,7 +143,7 @@ URAVTODOR виконує функції, подібні до реального 
 
 </div>
 
-
+</div>
 
 </section>
 
@@ -142,6 +160,23 @@ Private Infrastructure Company • Ukraine RP
 </div>
 
 </footer>
+
+<script defer src="https://cdn.trybit.com/widget/v1/widget.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  if (window.TryBitWidget) {
+    window.TryBitWidget.CreateInvoiceForm({
+      shop_id: "JV9zljN2qqCegfU5",
+      amount: undefined,
+      buttonText: "Pay with crypto",
+      currency: "USD",
+      locale: "ru",
+      template: "white",
+      emailRequired: true
+    }).mount('.cc-payment-form');
+  }
+});
+</script>
 
 <script src="script.js"></script>
 
